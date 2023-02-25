@@ -26,14 +26,14 @@ For example, we can find which artist is the most popular one or what day of wee
 
 ## Codes
 - To use these codes. Please follow this steps.
-    1. Update config file (dwh.cfg)[dwh.cfg]. All of the parameters with values in brackets (<>) must be updated according to AWS configuration.
-    2. Run (create_tables.py)[create_tables.py]. This code will delete all existing tables and create 5 empty tables as mentioned above.
-    3. Run (etl.py)[etl.py]. This code will do a lot of things based on defined queries in (sql_queries.py)[sql_queries.py].
+    1. Update config file [dwh.cfg](dwh.cfg). All of the parameters with values in brackets (<>) must be updated according to AWS configuration.
+    2. Run [create_tables.py](create_tables.py). This code will delete all existing tables and create 5 empty tables as mentioned above.
+    3. Run [etl.py](etl.py). This code will do a lot of things based on defined queries in [sql_queries.py](sql_queries.py).
         - copy data from AWS S3 and insert them into staging tables.
         - tranform data from staging tables into 5 analytic tables
         - count existing rows in each table
         - find an interesting insight
-- Optional - There are also Infrastructure as Code (IAC) for AWS cluster creation, config of required role as well as cluster deletion. See (iac)[iac] for more details.
+- Optional - There are also Infrastructure as Code (IAC) for AWS cluster creation, config of required role as well as cluster deletion. See [iac](iac) for more details.
     
 
 
